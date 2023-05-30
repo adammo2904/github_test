@@ -1,0 +1,6 @@
+library(usethis)
+gitcreds::gitcreds_set()
+git_default_branch_configure(name = "main")
+git_vaccinate()
+use_git()
+use_github()
