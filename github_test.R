@@ -17,3 +17,8 @@ plot <- ggplot(data = penguins, aes(y = body_mass_g, fill = species)) +
   labs(title = "Penguin weight across habitats",
        y = "Body mass")
 plot
+
+plot_2 <- ggplot(data = penguins, aes(y = body_mass_g, fill = species)) +
+  geom_histogram() +
+  theme_bw()
+plot_2
