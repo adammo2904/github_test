@@ -17,3 +17,5 @@ plot <- ggplot(data = penguins, aes(y = body_mass_g, fill = species)) +
   labs(title = "Penguin weight across habitats",
        y = "Body mass")
 plot
+
+create_from_github("liemdominic/Git", fork = TRUE)
