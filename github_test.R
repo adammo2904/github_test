@@ -18,4 +18,8 @@ plot <- ggplot(data = penguins, aes(y = body_mass_g, fill = species)) +
        y = "Body mass")
 plot
 
-create_from_github("liemdominic/Git", fork = TRUE)
+plot_2 <- ggplot(data = penguins, aes(y = body_mass_g, fill = species)) +
+  geom_histogram() +
+  theme_bw()
+plot_2
+
