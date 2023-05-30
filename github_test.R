@@ -10,16 +10,10 @@ library(tidyverse)
 library(ggplot2)
 penguins <- palmerpenguins::penguins
 
-plot <- ggplot(data = penguins, aes(x = species,
-                   y = body_mass_g
-                     )) +
-  geom_violin() +
-  geom_jitter(size = 1.5,
-              aes(fill = island),
-              pch = 21) +
+plot <- ggplot(data = penguins, aes(y = body_mass_g, fill = species)) +
+  geom_histogram() +
   theme_bw() +
   facet_wrap(~ island) +
   labs(title = "Penguin weight across habitats",
-       x = "Species",
        y = "Body mass")
 plot
